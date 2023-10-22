@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Internet Service Churn Analysis - Group Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
+				<a href="#" class="image avatar"><img src="images/Adit.jpeg" alt="" /></a>
+				<h1><strong>Internet Service Churn Analysis</strong></h1><br /><br />
+				<a href="https://adityaanggapradana.github.io/AdityaPradana.github.io/" class="button small"><strong>Home</strong></a>
+			</div>
+		</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>Project Summary</h2>
+						</header>
+						<p>This project aims to identify the customer churn rate and develop strategies to reduce this high churn rate. Utilizing the dataset titled "Internet Service Provider Customer Churn," our objective : </p>
+						<ul>
+						<li>To investigate the factors influencing customer churn.</li>
+						<li>Establish correlations.</li>
+						<li>Predict customer churn using logistic regression modeling.</li>
+						<li>Provide actionable recommendations that can be utilized to shape our future strategies.</li>
+						</ul>
+
+				<!-- Two -->
+					<section id="two">
+						<h2>Project Background</h2>
+						<div class="row gtr-50 gtr-uniform">
+						</div><br>
+						<p>O-Net Group is a leading internet service provider company. The CEO has assigned the Head of Data Analysis to conduct an in-depth analysis to identify the customer churn rate and formulate strategies to mitigate this high churn rate.</p> 
+					</section>
+				
+				<!-- Three -->
+				<section id="three">
+					<h2>Data Overview and Cleaning</h2>
+					<div class="row gtr-50 gtr-uniform">
+					<div class="col-9"><span class="image fit"><img src="images/Data Overview.png"></span></div>
+				</div>
+				
+				<!-- Five -->
+				<section id="five">
+					<h2>Data Cleaning</h2>
+					
+					<ol>
+						<li>We removed Irrelevant variables that we don't use in analysis							.</b></li>
+						<li>We removed duplicates data.</li>
+						<li>We Handle Missing Value by impute value in it.</li>
+						<li>We Identifying outliers by using interquartile methods and then removing the outliers.</li>
+					  </ol>
+				</section>
+
+					<h3>Objectives</h3>
+					<ol>
+						<li>To investigate the factors influencing customer churn.</li>
+						<li>Establish correlations.</li>
+						<li>Predict customer churn using logistic regression modeling.</li>
+						<li>Provide actionable recommendations that can be utilized to shape our future strategies.</li>
+					</ol>
+				</section>
+
+				<!-- Six -->
+				<section id="six">
+					<h2>Exploratory Data Analysis (EDA)</h2>
+					<h3><b>Overview Churn Customer and Package Subscribe</h3></b>
+					<div class="row gtr-50 gtr-uniform">
+						<div class="col-9"><span class="image fit"><img src="images/O-Net Group (1).jpg"></span></div>
+					</div><br>
+					<b>Interpretation:</b>
+					<ol>
+						<li>There are more than half, which is 36,523 customers (58.4%), who have churned.</li>
+						<li>The highest percentage of churn is among customers with the "internet-only" package, at 92.2%.</li>
+						<li>On the other hand, the "Full Package" customers represent the package with the lowest churn percentage at 36.6%.</li>
+				  	</ol><br>
+					
+					<h3><b>Overview Churn and Subscription Age Group</h3></b>
+					<div class="row gtr-50 gtr-uniform">
+						<div class="col-9"><span class="image fit"><img src="images/Churn Vs Subs.png"></span></div>
+					</div><br>
+					<b>Interpretation:</b> Customers in the subscription age group of 0-1 year representing approximately 54.8% of the total overall customer churn.<p>
+				  	</ol><br>
+					
+					<h3><b>Overview Churn and Service Failure</h3></b>
+					<div class="row gtr-50 gtr-uniform">
+						<div class="col-9"><span class="image fit"><img src="images/Churn & Service Failure.png"></span></div>
+					</div><br>
+					<p><b>Interpretation:</b> The number of Customer Churn instances is significantly higher among customers without issues, totaling  84.5%.</p>
+				
+					<h3><b>Potential Lost</h3></b>
+
+					<div class="row gtr-50 gtr-uniform">
+						<div class="col-9"><span class="image fit"><img src="images/Potential Lost.png"></span></div>
+					</div><br>
+					<b>Interpretation:</b>
+					<ol>
+						<li>We have a Potential Lost amounting to 611,390.</li>
+						<li>Among these, the Internet With TV Package has the highest Potential Lost</li>
+					</ol><br>
+
+					<h2>Insight</h2>
+					<ol>
+						<li>The Internet-only package has the highest customer churn rate based on Customer Package Category.</li>
+						<li>Customers in the subscription age of 0-1 year constitute the group with the highest number of customer churns.</b>.</li>
+						<li>Surprisingly, Service Failure does not influence customer churn, as the majority of customer churns come from non-problematic service failures.</li>
+					  </ol>
+				</section>
+
+				</section>
+				
+				<!-- Seven -->
+				<section id="seven">
+					<h2>Recommendation</h2>
+					<ol>
+						<li>Since the internet-only package has the highest churn rate, consider offering more customized packages. Understand the diverse needs and preferences of your customers and create packages that cater to their specific requirements. This could include options for different speeds, data limits, and pricing structures.</li>
+						<li>Customers in the subscription age of 0-1 year have the highest churn rate. To address this, concentrate on improving the onboarding experience for new subscribers. Provide clear, concise information about the services, and ensure a smooth installation and setup process. Consider offering incentives or discounts for the first few months to encourage long-term commitment</b>.</li>
+					  </ol>
+				</section>
+
+				<p><h2>Project Files</h2></p>
+						For a more comprehensive analysis and visualization, please open the project files.
+						<ul>
+						<li><a href="https://colab.research.google.com/drive/1sx8K4WDWK6wm6jm363TQ6lWH1W2eG2tY?usp=sharing">Project Notebook</a></li>
+						<li><a href="https://public.tableau.com/views/May23_Seoul_Team5_GroupOGFP/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link">Tableau Dashboard</a></li>
+					</ul>
+					</section>
+
+				<!-- Eight -->
+				<section id="eight">
+					<h2>Dashboard</h2>	
+					<div class='tableauPlaceholder' id='viz1697873646384' style='position: relative'><noscript><a href='#'><img alt='O-Net Group Internet Services ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;May23_Seoul_Team5_GroupOGFP&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='May23_Seoul_Team5_GroupOGFP&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;May23_Seoul_Team5_GroupOGFP&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1697873646384');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='2127px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+				</section>
+				
+				<a href="https://adityaanggapradana.github.io/AdityaPradana.github.io/" class="button small">Home</a>
+				<a href="https://adytiapp.github.io/adytia_uwak_portfolio/projects.html" class="button small">Projects</a>
+			
+			</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/aditya-a-pradana/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+					<li><a href="https://github.com/AdityaAnggaPradana" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					<li><a href="https://wa.me/6287888633607" class="icon solid fa-phone"><span class="label">Phone</span></a></li>
+					<li><a href="mailto:adityasasmita3110@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Aditya Pradana</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</footer>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+</html>
